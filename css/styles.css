@@ -153,11 +153,22 @@ ul {
 }
 
 /* hero */
+
 .hero {
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
   background-color: var(--secondary-background-color);
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero.jpg");
 }
 
 .hero-title {
@@ -456,7 +467,6 @@ ul {
   background-color: var(--accent-color);
   color: var(--primary-background-color);
 }
-
 
 .current.button {
   font-family: inherit;
