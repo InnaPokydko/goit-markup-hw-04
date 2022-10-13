@@ -142,18 +142,25 @@ ul {
 }
 
 .auth-item {
-  margin-right: 50px;
+    margin-right: 50px;
 }
 
 .auth-item-last {
   margin-right: 0;
-}
+  }
 
 .header-emeil,
 .header-tel {
+ 
   color: var(--primary-text-color);
   font-weight: 500;
   padding: 32px 0;
+}
+
+.icon-emeil:hover, 
+.icon-emeil:focus,
+.icon-tel:hover, .icon-tel:focus {
+fill: currentColor;
 }
 
 /* hero */
@@ -350,7 +357,9 @@ ul {
 .icon-link {
   width: 44px;
   height: 44px;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   background-color: var(--primary-background-color);
 color: var(--net-color);
@@ -358,6 +367,12 @@ color: var(--net-color);
 
 .icon-net {
 fill: currentColor;
+}
+
+.icon-link:hover,
+.icon-link:focus {
+  color: var(--primary-background-color);
+  background-color: var(--accent-color);
 }
 
 /*title h2*/
@@ -391,6 +406,19 @@ fill: currentColor;
   align-items: center;
   border-radius: 4px;
   border: 1px solid var(--inner-border);
+}
+
+.client-link {
+  color: var(--net-color);
+}
+
+.icon-client {
+  fill: currentColor;
+}
+
+.client-link:hover,
+.client-link:focus {
+  color: var(--accent-color);
 }
 
 
@@ -434,7 +462,13 @@ fill: currentColor;
   border-radius: 50%;
   background-color: var(--net-background-color);
   color: var(--primary-background-color);
+ }
+
+.net-link:hover,
+.net-link:focus {
+  background-color: var(--accent-color);
 }
+
 
 /*footer*/
 .footer {
