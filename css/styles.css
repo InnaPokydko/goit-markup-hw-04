@@ -11,6 +11,7 @@
   --border-bottom: #ececec;
   --border-color: #eeeeee;
   --section-bc-cl: #f5f5f5;
+  --net-background-color: rgba(255, 255, 255, 0.1);
   --inner-border: #afb1b8;
 }
 
@@ -333,6 +334,24 @@ ul {
   padding: 30px;
 }
 
+.icon-list {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.icon-item {
+  list-style: none;
+}
+
+.icon-link {
+  width: 44px;
+  height: 44px;
+  display: block;
+  border-radius: 50%;
+  background-color: var(--primary-background-color);
+}
+
 /*title h2*/
 .title {
   color: var(--title-text-color);
@@ -346,22 +365,21 @@ ul {
 
 /*clients*/
 .clients {
-  background-color: var(--section-bc-cl);
+  background-color: var(--primary-background-color);
 }
 
 .client-logo {
   display: flex;
   gap: 30px;
+  justify-content: center;
 }
 
 .client-item {
   list-style: none;
-}
-
-.client-card {
   width: 170px;
   height: 92px;
   align-items: center;
+  border-radius: 4px;
   border: 1px solid var(--inner-border);
 }
 
@@ -379,12 +397,40 @@ ul {
   margin: -1px;
 }
 
+/*net*/
+.net-title {
+  color: var(--primary-background-color);
+  text-transform: uppercase;
+}
+
+.net-list {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.net-item {
+  list-style: none;
+}
+
+.net-link {
+  width: 44px;
+  height: 44px;
+  display: block;
+  border-radius: 50%;
+  background-color: var(--net-background-color);
+}
+
 /*footer*/
 .footer {
   background-color: var(--secondary-background-color);
-
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-flex {
+  display: flex;
+  gap: 70px;
 }
 
 .lists {
@@ -543,7 +589,7 @@ ul {
 .portfolio-link:hover,
 .portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1x 4px 6px rgba(0, 0, 0, 0.16);
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-title {
