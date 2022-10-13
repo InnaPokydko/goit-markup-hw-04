@@ -13,6 +13,7 @@
   --section-bc-cl: #f5f5f5;
   --net-background-color: rgba(255, 255, 255, 0.1);
   --inner-border: #afb1b8;
+  --net-color: #AFB1B8;
 }
 
 body {
@@ -231,6 +232,8 @@ ul {
 .features-cards {
   width: 270px;
   height: 120px;
+  display: flex;
+  justify-content: center;
   align-items: center;
   background-color: var(--section-background-color);
   margin-bottom: 30px;
@@ -350,6 +353,11 @@ ul {
   display: block;
   border-radius: 50%;
   background-color: var(--primary-background-color);
+color: var(--net-color);
+}
+
+.icon-net {
+fill: currentColor;
 }
 
 /*title h2*/
@@ -378,10 +386,13 @@ ul {
   list-style: none;
   width: 170px;
   height: 92px;
+  display: flex;
+  justify-content: center;
   align-items: center;
   border-radius: 4px;
   border: 1px solid var(--inner-border);
 }
+
 
 /*Приховані заголовки*/
 .visually-hidden {
@@ -411,14 +422,18 @@ ul {
 
 .net-item {
   list-style: none;
+  
 }
 
 .net-link {
   width: 44px;
   height: 44px;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   background-color: var(--net-background-color);
+  color: var(--primary-background-color);
 }
 
 /*footer*/
