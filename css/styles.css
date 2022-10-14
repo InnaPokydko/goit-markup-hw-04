@@ -13,7 +13,7 @@
   --section-bc-cl: #f5f5f5;
   --net-background-color: rgba(255, 255, 255, 0.1);
   --inner-border: #afb1b8;
-  --net-color: #AFB1B8;
+  --net-color: #afb1b8;
 }
 
 body {
@@ -142,25 +142,24 @@ ul {
 }
 
 .auth-item {
-    margin-right: 50px;
+  margin-right: 50px;
 }
 
 .auth-item-last {
   margin-right: 0;
-  }
+}
 
 .header-emeil,
 .header-tel {
- 
   color: var(--primary-text-color);
   font-weight: 500;
   padding: 32px 0;
 }
 
-.icon-emeil:hover, 
-.icon-emeil:focus,
-.icon-tel:hover, .icon-tel:focus {
-fill: currentColor;
+.icon-emeil,
+.icon-tel {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* hero */
@@ -362,11 +361,11 @@ fill: currentColor;
   align-items: center;
   border-radius: 50%;
   background-color: var(--primary-background-color);
-color: var(--net-color);
+  color: var(--net-color);
 }
 
 .icon-net {
-fill: currentColor;
+  fill: currentColor;
 }
 
 .icon-link:hover,
@@ -401,15 +400,17 @@ fill: currentColor;
   list-style: none;
   width: 170px;
   height: 92px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  border: 1px solid var(--inner-border);
 }
 
 .client-link {
   color: var(--net-color);
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid var(--inner-border);
 }
 
 .icon-client {
@@ -419,8 +420,8 @@ fill: currentColor;
 .client-link:hover,
 .client-link:focus {
   color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
-
 
 /*Приховані заголовки*/
 .visually-hidden {
@@ -450,7 +451,6 @@ fill: currentColor;
 
 .net-item {
   list-style: none;
-  
 }
 
 .net-link {
@@ -462,13 +462,12 @@ fill: currentColor;
   border-radius: 50%;
   background-color: var(--net-background-color);
   color: var(--primary-background-color);
- }
+}
 
 .net-link:hover,
 .net-link:focus {
   background-color: var(--accent-color);
 }
-
 
 /*footer*/
 .footer {
@@ -660,7 +659,6 @@ fill: currentColor;
 
 .project-text {
   color: var(--primary-text-color);
-
   font-size: 16px;
   line-height: 1.89;
 }
