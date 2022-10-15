@@ -169,7 +169,7 @@ ul {
 .hero {
   max-width: 1600px;
   height: 600px;
-  margin: 0;
+  margin: 0 auto;
   background-color: var(--secondary-background-color);
   padding-top: 200px;
   padding-bottom: 200px;
@@ -443,6 +443,10 @@ ul {
 .net-title {
   color: var(--primary-background-color);
   text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16.41/14);
 }
 
 .net-list {
@@ -481,6 +485,7 @@ ul {
 .footer-flex {
   display: flex;
   gap: 70px;
+  align-items: baseline;
 }
 
 .lists {
@@ -566,9 +571,6 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
-
-  box-shadow: 0px, 2px rgba(0, 0, 0, 0.12), 0px, 1px rgba(0, 0, 0, 0.08), 0px,
-    3px rgba(0, 0, 0, 0.1);
 }
 
 .filter-button {
@@ -578,11 +580,17 @@ ul {
 .filter-button:hover {
   background-color: var(--accent-color);
   color: var(--primary-background-color);
+
+  box-shadow: 0px 2px rgba(0, 0, 0, 0.12), 0px 1px rgba(0, 0, 0, 0.08), 0px
+    3px rgba(0, 0, 0, 0.1);
 }
 
 .filter-button:focus {
   background-color: var(--accent-color);
   color: var(--primary-background-color);
+
+  box-shadow: 0px 2px rgba(0, 0, 0, 0.12), 0px 1px rgba(0, 0, 0, 0.08), 0px
+  3px rgba(0, 0, 0, 0.1);
 }
 .filter-button:active {
   background-color: var(--accent-color);
